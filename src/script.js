@@ -22,6 +22,9 @@ document.addEventListener('DOMContentLoaded', () => {
   const languageIconMobile = document.getElementById('language-icon-mobile');
   const languageOptionsMobile = document.getElementById('language-options-mobile');
 
+
+
+
   // --- LÓGICA DO TEMA ---
   const updateButtonIcon = (theme, isMobile = false) => {
     const icon = isMobile ? themeIconMobile : themeIcon;
@@ -195,6 +198,18 @@ document.addEventListener('DOMContentLoaded', () => {
             footerDescription2: "© 2025 Paulo Mateus. Todos os direitos reservados.",
             resumeLinkText: "Currículo PTBR",
             resumeLinkFile: "assets/Paulo_Senior_Software_Engineer_PT.pdf",
+            highlightsTitle: "Diferenciais (na prática)",
+            highlightsDescription: "Eu construo produtos de ponta a ponta: UX/UI, front, back, dados, infra e deploy — com foco em performance, segurança e escala.",
+            highlight1Title: "Full Cycle Delivery",
+            highlight1Desc: "Saio do Figma e chego em produção: arquitetura, implementação, CI/CD, observabilidade e evolução contínua.",
+            highlight2Title: "Segurança e LGPD",
+            highlight2Desc: "APIs seguras, boas práticas de privacidade e compliance (LGPD + princípios de GDPR), pensando em dados sensíveis desde o início.",
+            highlight3Title: "Back-end de verdade",
+            highlight3Desc: "Microsserviços (NestJS), PostgreSQL/Prisma, Redis, filas/eventos quando precisa, e performance como prioridade.",
+            highlight4Title: "IA aplicada (sem hype vazio)",
+            highlight4Desc: "Integração com IA + motores matemáticos (FFT/Sobel/Laplacian) e calibragem probabilística com Python (scikit-learn).",
+            projectPixeltruthDesc: "Plataforma full-cycle de detecção de mídia sintética (IA/deepfake), criada do zero: UX/UI, front, back, infra e deploy. Combina motor matemático (FFT, Sobel, Laplacian) com calibragem probabilística em Python (scikit-learn) para entregar score confiável.",
+
         },
         en: {
             header: "Paulo, Senior Software Engineer", 
@@ -224,6 +239,18 @@ document.addEventListener('DOMContentLoaded', () => {
             footerDescription2: "© 2025 Paulo Mateus. All rights reserved.",
             resumeLinkText: "Resume English",
             resumeLinkFile: "assets/Paulo_Senior_Software_Engineer_EN.pdf",
+            highlightsTitle: "Differentiators (in practice)",
+            highlightsDescription: "I build products end-to-end: UX/UI, frontend, backend, data, infra and deployment — focusing on performance, security and scale.",
+            highlight1Title: "Full-Cycle Delivery",
+            highlight1Desc: "From Figma to production: architecture, implementation, CI/CD, observability and continuous improvement.",
+            highlight2Title: "Security & Privacy (LGPD/GDPR)",
+            highlight2Desc: "Secure APIs, privacy-by-design and compliance (LGPD + GDPR principles), especially for sensitive data.",
+            highlight3Title: "Real backend engineering",
+            highlight3Desc: "Microservices (NestJS), PostgreSQL/Prisma, Redis, queues/events when needed, and performance as a priority.",
+            highlight4Title: "Applied AI (no empty hype)",
+            highlight4Desc: "AI integration + mathematical engines (FFT/Sobel/Laplacian) and probabilistic calibration with Python (scikit-learn).",
+            projectPixeltruthDesc: "A full-cycle synthetic media detection platform (AI/deepfake), built from scratch: UX/UI, frontend, backend, infra and deployment. It combines a mathematical engine (FFT, Sobel, Laplacian) with probabilistic calibration in Python (scikit-learn) to deliver a reliable score.",
+
         },
         es: {
           header: "Paulo, Ingeniero de Software Full Stack",
@@ -253,6 +280,17 @@ document.addEventListener('DOMContentLoaded', () => {
           footerDescription2: "© 2025 Paulo Mateus. Todos los derechos reservados.",
           resumeLinkText: "Currículo en Español",
           resumeLinkFile: "assets/Paulo_Senior_Software_Engineer_ES.pdf",
+          highlightsTitle: "Diferenciales (en la práctica)",
+          highlightsDescription: "Construyo productos de punta a punta: UX/UI, frontend, backend, datos, infra y despliegue — con foco en rendimiento, seguridad y escala.",
+          highlight1Title: "Entrega Full-Cycle",
+          highlight1Desc: "Del Figma a producción: arquitectura, implementación, CI/CD, observabilidad y mejora continua.",
+          highlight2Title: "Seguridad y privacidad (LGPD/GDPR)",
+          highlight2Desc: "APIs seguras, privacidad desde el diseño y compliance (LGPD + principios de GDPR), especialmente con datos sensibles.",
+          highlight3Title: "Backend de verdad",
+          highlight3Desc: "Microservicios (NestJS), PostgreSQL/Prisma, Redis, colas/eventos cuando hace falta, y rendimiento como prioridad.",
+          highlight4Title: "IA aplicada (sin humo)",
+          highlight4Desc: "Integración con IA + motores matemáticos (FFT/Sobel/Laplacian) y calibración probabilística con Python (scikit-learn).",
+          projectPixeltruthDesc: "Plataforma full-cycle de detección de medios sintéticos (IA/deepfake), creada desde cero: UX/UI, frontend, backend, infra y despliegue. Combina motor matemático (FFT, Sobel, Laplacian) con calibración probabilística en Python (scikit-learn) para entregar un score confiable.",
       }
     };
 
@@ -281,6 +319,42 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelector('#exp-cp-desc-p2').textContent = translations[language].expCpDesc2;
     document.querySelector('#exp-bdm-desc').textContent = translations[language].expBdmDesc;
     document.querySelector('#exp-dourado-desc').textContent = translations[language].expDouradoDesc;
+
+      // Highlights
+    const ht = document.getElementById('highlights-title');
+    if (ht) ht.textContent = translations[language].highlightsTitle;
+
+    const hd = document.getElementById('highlights-description');
+    if (hd) hd.textContent = translations[language].highlightsDescription;
+
+    const h1t = document.getElementById('highlight-1-title');
+    if (h1t) h1t.textContent = translations[language].highlight1Title;
+
+    const h1d = document.getElementById('highlight-1-desc');
+    if (h1d) h1d.textContent = translations[language].highlight1Desc;
+
+    const h2t = document.getElementById('highlight-2-title');
+    if (h2t) h2t.textContent = translations[language].highlight2Title;
+
+    const h2d = document.getElementById('highlight-2-desc');
+    if (h2d) h2d.textContent = translations[language].highlight2Desc;
+
+    const h3t = document.getElementById('highlight-3-title');
+    if (h3t) h3t.textContent = translations[language].highlight3Title;
+
+    const h3d = document.getElementById('highlight-3-desc');
+    if (h3d) h3d.textContent = translations[language].highlight3Desc;
+
+    const h4t = document.getElementById('highlight-4-title');
+    if (h4t) h4t.textContent = translations[language].highlight4Title;
+
+    const h4d = document.getElementById('highlight-4-desc');
+    if (h4d) h4d.textContent = translations[language].highlight4Desc;
+
+    // PixelTruth
+    const px = document.getElementById('project-pixeltruth-desc');
+    if (px) px.textContent = translations[language].projectPixeltruthDesc;
+
     const langData = translations[language];
     if (langData) {
       // Desktop
