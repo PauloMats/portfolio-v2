@@ -60,17 +60,17 @@ export const siteContent: SiteContent = {
       es: "Ingeniero de Software Senior construyendo productos web y mobile con foco en escala, UX y rendimiento.",
     },
     description: {
-      pt: "Tenho 5+ anos de experiência entregando interfaces robustas, PWAs, integrações e soluções full stack com React, Next.js, Node.js e Kotlin. Gosto de construir software bonito, acessível e confiável para ambientes reais de produção.",
-      en: "I have 5+ years of experience delivering robust interfaces, PWAs, integrations and full stack solutions with React, Next.js, Node.js and Kotlin. I like building software that is polished, accessible and reliable in production.",
-      es: "Tengo 5+ años de experiencia entregando interfaces robustas, PWAs, integraciones y soluciones full stack con React, Next.js, Node.js y Kotlin. Me gusta construir software pulido, accesible y confiable para producción.",
+      pt: "Tenho 5+ anos de experiência entregando interfaces robustas, PWAs, integrações e soluções full stack com React, Next.js, Node.js e Nest. Gosto de construir software bonito, acessível e confiável para ambientes reais de produção.",
+      en: "I have 5+ years of experience delivering robust interfaces, PWAs, integrations and full stack solutions with React, Next.js, Node.js and Nest. I like building software that is polished, accessible and reliable in production.",
+      es: "Tengo 5+ años de experiencia entregando interfaces robustas, PWAs, integraciones y soluciones full stack con React, Next.js, Node.js y Nest. Me gusta construir software pulido, accesible y confiable para producción.",
     },
     primaryCta: { pt: "Ver projetos", en: "See projects", es: "Ver proyectos" },
     secondaryCta: { pt: "Entrar em contato", en: "Get in touch", es: "Entrar en contacto" },
     resumeCta: { pt: "Baixar currículo", en: "Download resume", es: "Descargar CV" },
     profileCardTitle: {
-      pt: "React, Next.js, Node.js e Kotlin",
-      en: "React, Next.js, Node.js and Kotlin",
-      es: "React, Next.js, Node.js y Kotlin",
+      pt: "React, Next.js, Node.js e Nest",
+      en: "React, Next.js, Node.js and Nest",
+      es: "React, Next.js, Node.js y Nest",
     },
     profileCardDescription: {
       pt: "Experiência com arquitetura de front-end, integrações, produto digital e entregas de ponta a ponta com atenção a performance, acessibilidade e manutenção.",
@@ -115,9 +115,9 @@ export const siteContent: SiteContent = {
         es: "Backend y datos para productos reales",
       },
       {
-        pt: "Android nativo com Kotlin",
-        en: "Native Android with Kotlin",
-        es: "Android nativo con Kotlin",
+        pt: "UX/UI do zero ao deploy",
+        en: "UX/UI from zero to deployment",
+        es: "UX/UI desde cero hasta el despliegue",
       },
     ],
   },
@@ -135,9 +135,9 @@ export const siteContent: SiteContent = {
         es: "Tengo experiencia con Clean Code, diseño de componentes, DevSecOps y flujos de entrega continua. Me gusta colaborar en equipos, revisar PRs, mejorar estándares y mantener el software legible cuando el alcance crece.",
       },
       {
-        pt: "No mobile, exploro Kotlin e arquitetura Android. No web, transito entre React/Next.js, Node.js, APIs, bancos relacionais e integrações que exigem confiabilidade.",
-        en: "On mobile, I work with Kotlin and Android architecture. On the web, I move between React/Next.js, Node.js, APIs, relational databases and integrations that need reliability.",
-        es: "En mobile trabajo con Kotlin y arquitectura Android. En web me muevo entre React/Next.js, Node.js, APIs, bases de datos relacionales e integraciones que exigen confiabilidad.",
+        pt: "No mobile, exploro Kotlin e arquitetura Android ou React Native. No web, transito entre React/Next.js, Node.js, APIs, bancos relacionais e integrações que exigem confiabilidade.",
+        en: "On mobile, I work with Kotlin and Android architecture or React Native. On the web, I move between React/Next.js, Node.js, APIs, relational databases and integrations that need reliability.",
+        es: "En mobile trabajo con Kotlin y arquitectura Android o React Native. En web me muevo entre React/Next.js, Node.js, APIs, bases de datos relacionales e integraciones que exigen confiabilidad.",
       },
     ],
     facts: [
@@ -169,6 +169,14 @@ export const siteContent: SiteContent = {
           es: "Ciberseguridad, Android nativo y productos con IA aplicada.",
         },
       },
+      {
+        label: { pt: "Designer UX/UI", en: "UX/UI designer", es: "Diseñador UX/UI" },
+        value: {
+          pt: "Experiência com criação de interfaces no FIGMA, responsivas e acessíveis com atenção a detalhes visuais e experiência fluida.",
+          en: "I enjoy crafting modern, responsive and accessible interfaces in FIGMA with attention to visual details and smooth experience.",
+          es: "Disfruto creando interfaces modernas, responsivas y accesibles en FIGMA con atención a detalles visuales y experiencia fluida.",
+        },
+      }
     ],
   },
   highlights: {
