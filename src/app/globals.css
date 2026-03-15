@@ -1,0 +1,107 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-bg: 245 238 230;
+  --color-surface: 255 249 241;
+  --color-surface-alt: 233 225 214;
+  --color-fg: 21 30 46;
+  --color-muted: 97 108 127;
+  --color-accent: 206 105 47;
+  --color-accent-soft: 232 190 165;
+  --color-border: 194 178 160;
+  --color-success: 56 130 114;
+  --color-grid: 99 110 128;
+}
+
+.dark {
+  --color-bg: 9 18 28;
+  --color-surface: 18 30 44;
+  --color-surface-alt: 28 43 61;
+  --color-fg: 245 239 230;
+  --color-muted: 167 178 198;
+  --color-accent: 247 141 78;
+  --color-accent-soft: 93 63 41;
+  --color-border: 67 83 104;
+  --color-success: 87 198 191;
+  --color-grid: 144 164 190;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top left, rgba(var(--color-accent), 0.14), transparent 32%),
+    radial-gradient(circle at top right, rgba(var(--color-success), 0.12), transparent 28%),
+    linear-gradient(180deg, rgba(var(--color-bg), 1) 0%, rgba(var(--color-surface), 1) 100%);
+  color: rgb(var(--color-fg));
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background-image: linear-gradient(to right, rgba(var(--color-grid), 0.08) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(var(--color-grid), 0.08) 1px, transparent 1px);
+  background-size: 72px 72px;
+  mask-image: radial-gradient(circle at center, black 48%, transparent 90%);
+  opacity: 0.45;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  ::selection {
+    background: rgba(var(--color-accent), 0.22);
+    color: rgb(var(--color-fg));
+  }
+}
+
+@layer components {
+  .section-shell {
+    @apply rounded-[2.4rem] border border-border/60 bg-surface/75 shadow-soft backdrop-blur-sm;
+  }
+
+  .eyebrow {
+    @apply inline-flex rounded-full border border-border/60 bg-background/70 px-3 py-1 text-xs font-semibold uppercase tracking-[0.24em] text-muted;
+  }
+
+  .button-primary {
+    @apply inline-flex items-center gap-2 rounded-full bg-accent px-5 py-3 text-sm font-semibold text-white transition hover:-translate-y-0.5 hover:shadow-soft;
+  }
+
+  .button-secondary {
+    @apply inline-flex items-center gap-2 rounded-full border border-border/70 bg-surface/80 px-5 py-3 text-sm font-semibold text-foreground transition hover:-translate-y-0.5 hover:border-accent/45 hover:text-accent;
+  }
+
+  .spotlight {
+    background:
+      radial-gradient(circle at 18% 16%, rgba(var(--color-accent), 0.18), transparent 22%),
+      radial-gradient(circle at 84% 12%, rgba(var(--color-success), 0.16), transparent 18%);
+  }
+
+  .marquee-track {
+    animation: marquee 32s linear infinite;
+  }
+
+  .marquee-track:hover {
+    animation-play-state: paused;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .marquee-track {
+    animation: none;
+  }
+}

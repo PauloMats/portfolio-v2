@@ -1,35 +1,35 @@
-v2 deste portfólio em construção em: [Novo Portfólio em React e Next](https://github.com/PauloMats/Portfolio-TS_React_Next)
+# Paulo Mateus Portfolio
 
-# Portfólio pessoal
+Portfólio pessoal reconstruído com `Next.js`, `React`, `TypeScript` e `Tailwind CSS`.
 
-Esse é o meu portfólio pessoal, onde você pode encontrar informações sobre mim, meus projetos e minhas habilidades.
+## Stack
 
-## Sobre mim
+- `Next.js` com App Router
+- `TypeScript`
+- `Tailwind CSS`
+- `next-themes` para dark/light mode
+- i18n client-side com seletor de idioma no header
 
-Meu nome é Paulo, sou desenvolvedor full Stack e estou sempre em busca de novos conhecimentos e desafios. Atualmente, estou focado em desenvolvimento web, principalmente com React e Next.js.
+## Estrutura
 
-## Projetos
+- `src/app`: layout global, página inicial e estilos globais
+- `src/components`: componentes reutilizáveis da interface
+- `src/data`: conteúdo centralizado para projetos, experiências, certificados e traduções
+- `public`: imagens e currículos usados pelo novo site
 
-Veja alguns dos meus projetos no portfolio em:[Portfólio de Projetos](https://paulomats.github.io/)
+## Rodando localmente
 
-## Habilidades
-
-- JavaScript
-- TypeScript
-- React
-- Next.js
-- Node.js
-- Nest.js
-- Express
-- Docker
-- MySQL
-- HTML
-- CSS
-
-## Contato
-
-- Email: pm.mats98@gmail.com
-- LinkedIn: [Paulo Mateus](https://www.linkedin.com/in/paulomatsdev/)
-- GitHub: [paulomats](github.com/paulomats)
-
+```bash
+npm install
+npm run dev
 ```
+
+## Próximos ajustes fáceis
+
+- adicionar novos projetos em `src/data/catalog.ts`
+- ajustar textos e traduções em `src/data/site-content.ts`
+- trocar imagens e currículos em `public/`
+
+## Observação
+
+O ambiente atual não tem `node`/`npm` instalados, então a base foi montada e organizada, mas não foi possível validar `build` ou `lint` localmente nesta sessão.
