@@ -116,5 +116,6 @@ export interface SiteContent {
     primaryCta: LocalizedString;
     secondaryCta: LocalizedString;
     footerNote: LocalizedString;
+    footerLinkLabel: LocalizedString;
   };
 }

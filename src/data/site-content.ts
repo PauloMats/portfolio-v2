@@ -25,13 +25,13 @@ export const siteContent: SiteContent = {
   seo: {
     title: "Paulo Mateus | Senior Software Engineer",
     description:
-      "Portfólio de Paulo Mateus com experiência em produtos web, Android, front-end escalável, back-end e entrega full-cycle.",
+      "Portfólio de Paulo Mateus, engenheiro de software sênior com 5+ anos de experiência em produtos web, mobile e soluções full stack.",
   },
   header: {
     availability: {
-      pt: "Disponível para novos desafios",
-      en: "Open to new opportunities",
-      es: "Disponible para nuevos desafíos",
+      pt: "Disponível para oportunidades sênior",
+      en: "Open to senior opportunities",
+      es: "Disponible para oportunidades senior",
     },
     nav: [
       { href: "#highlights", label: { pt: "Diferenciais", en: "Highlights", es: "Diferenciales" } },
@@ -50,36 +50,36 @@ export const siteContent: SiteContent = {
   },
   hero: {
     eyebrow: {
-      pt: "Senior Software Engineer · React · Next.js · Node.js · Kotlin",
-      en: "Senior Software Engineer · React · Next.js · Node.js · Kotlin",
-      es: "Senior Software Engineer · React · Next.js · Node.js · Kotlin",
+      pt: "Paulo Mateus · Senior Software Engineer",
+      en: "Paulo Mateus · Senior Software Engineer",
+      es: "Paulo Mateus · Senior Software Engineer",
     },
     title: {
-      pt: "Portfólio reconstruído para destacar produto, código e entrega de ponta a ponta.",
-      en: "A rebuilt portfolio designed to highlight product thinking, code quality and end-to-end delivery.",
-      es: "Un portafolio reconstruido para destacar producto, código y entrega de punta a punta.",
+      pt: "Engenheiro de Software Sênior criando produtos web e mobile com foco em escala, UX e performance.",
+      en: "Senior Software Engineer building web and mobile products focused on scale, UX and performance.",
+      es: "Ingeniero de Software Senior construyendo productos web y mobile con foco en escala, UX y rendimiento.",
     },
     description: {
-      pt: "Sou Paulo Mateus, engenheiro de software full stack com foco em interfaces robustas, acessibilidade, arquitetura e evolução contínua. Atuo entre produto, front-end, back-end e mobile para transformar ideia em software utilizável.",
-      en: "I am Paulo Mateus, a full stack software engineer focused on robust interfaces, accessibility, architecture and continuous evolution. I work across product, frontend, backend and mobile to turn ideas into usable software.",
-      es: "Soy Paulo Mateus, ingeniero de software full stack enfocado en interfaces robustas, accesibilidad, arquitectura y evolución continua. Trabajo entre producto, frontend, backend y mobile para convertir ideas en software usable.",
+      pt: "Tenho 5+ anos de experiência entregando interfaces robustas, PWAs, integrações e soluções full stack com React, Next.js, Node.js e Kotlin. Gosto de construir software bonito, acessível e confiável para ambientes reais de produção.",
+      en: "I have 5+ years of experience delivering robust interfaces, PWAs, integrations and full stack solutions with React, Next.js, Node.js and Kotlin. I like building software that is polished, accessible and reliable in production.",
+      es: "Tengo 5+ años de experiencia entregando interfaces robustas, PWAs, integraciones y soluciones full stack con React, Next.js, Node.js y Kotlin. Me gusta construir software pulido, accesible y confiable para producción.",
     },
     primaryCta: { pt: "Ver projetos", en: "See projects", es: "Ver proyectos" },
     secondaryCta: { pt: "Entrar em contato", en: "Get in touch", es: "Entrar en contacto" },
     resumeCta: { pt: "Baixar currículo", en: "Download resume", es: "Descargar CV" },
     profileCardTitle: {
-      pt: "Engenharia com visão de produto",
-      en: "Engineering with product awareness",
-      es: "Ingeniería con visión de producto",
+      pt: "React, Next.js, Node.js e Kotlin",
+      en: "React, Next.js, Node.js and Kotlin",
+      es: "React, Next.js, Node.js y Kotlin",
     },
     profileCardDescription: {
-      pt: "Da arquitetura ao deploy, com foco em performance, acessibilidade, UX limpa e base preparada para crescer.",
-      en: "From architecture to deployment, focused on performance, accessibility, clean UX and a base that can evolve safely.",
-      es: "De la arquitectura al deploy, con foco en rendimiento, accesibilidad, UX limpia y una base preparada para crecer.",
+      pt: "Experiência com arquitetura de front-end, integrações, produto digital e entregas de ponta a ponta com atenção a performance, acessibilidade e manutenção.",
+      en: "Experience in frontend architecture, integrations, digital product work and end-to-end delivery with attention to performance, accessibility and maintainability.",
+      es: "Experiencia en arquitectura frontend, integraciones, producto digital y entregas end-to-end con atención a rendimiento, accesibilidad y mantenibilidad.",
     },
     stats: [
       {
-        value: "4+",
+        value: "5+",
         label: {
           pt: "anos de experiência prática",
           en: "years of hands-on experience",
@@ -124,9 +124,9 @@ export const siteContent: SiteContent = {
   about: {
     title: { pt: "Além do código", en: "Beyond the code", es: "Más allá del código" },
     intro: {
-      pt: "Uma base moderna serve para mais do que aparência: ela deixa o portfólio fácil de manter, expandir e adaptar ao próximo passo da carreira.",
-      en: "A modern foundation does more than improve visuals: it keeps the portfolio easy to maintain, expand and adapt to the next career move.",
-      es: "Una base moderna hace más que mejorar la estética: mantiene el portafolio fácil de mantener, ampliar y adaptar al siguiente paso de la carrera.",
+      pt: "Atuo como engenheiro de software sênior com olhar para produto, qualidade de código e experiência do usuário. Gosto de transformar requisitos complexos em software claro e utilizável.",
+      en: "I work as a senior software engineer with a strong eye for product, code quality and user experience. I like turning complex requirements into clear and usable software.",
+      es: "Actúo como ingeniero de software senior con mirada para producto, calidad de código y experiencia de usuario. Me gusta convertir requisitos complejos en software claro y usable.",
     },
     paragraphs: [
       {
@@ -150,7 +150,7 @@ export const siteContent: SiteContent = {
         },
       },
       {
-        label: { pt: "Trabalho melhor em", en: "Best work mode", es: "Rindo mejor en" },
+        label: { pt: "Trabalho melhor em", en: "Best work mode", es: "Trabajo mejor en" },
         value: {
           pt: "Ambientes colaborativos, com autonomia e critério técnico.",
           en: "Collaborative environments with autonomy and technical rigor.",
@@ -174,9 +174,9 @@ export const siteContent: SiteContent = {
   highlights: {
     title: { pt: "Diferenciais na prática", en: "Practical differentiators", es: "Diferenciales en la práctica" },
     description: {
-      pt: "O novo layout organiza a narrativa profissional em blocos claros: visão de produto, stack, experiência, provas de execução e contato.",
-      en: "The new layout organizes the professional narrative into clear blocks: product thinking, stack, experience, proof of execution and contact.",
-      es: "El nuevo layout organiza la narrativa profesional en bloques claros: visión de producto, stack, experiencia, evidencia de ejecución y contacto.",
+      pt: "Combino visão de produto, engenharia forte e execução prática para entregar software com cara de produto final.",
+      en: "I combine product thinking, strong engineering and practical execution to deliver software that feels production-ready.",
+      es: "Combino visión de producto, ingeniería sólida y ejecución práctica para entregar software con cara de producto final.",
     },
     items: [
       {
@@ -216,9 +216,9 @@ export const siteContent: SiteContent = {
   skills: {
     title: { pt: "Caixinha de ferramentas", en: "Toolbox", es: "Caja de herramientas" },
     description: {
-      pt: "As áreas abaixo resumem onde costumo agregar mais valor em produto, implementação e evolução da base.",
-      en: "The areas below summarize where I tend to add the most value in product work, implementation and platform evolution.",
-      es: "Las áreas a continuación resumen dónde suelo aportar más valor en producto, implementación y evolución de la base.",
+      pt: "Estas são as frentes em que costumo gerar mais impacto, seja construindo do zero ou evoluindo uma base já em produção.",
+      en: "These are the areas where I usually create the most impact, whether building from scratch or evolving a live codebase.",
+      es: "Estas son las áreas donde suelo generar más impacto, tanto construyendo desde cero como evolucionando una base en producción.",
     },
     items: [
       {
@@ -283,9 +283,9 @@ export const siteContent: SiteContent = {
   certificates: {
     title: { pt: "Certificados e formação", en: "Certificates and education", es: "Certificados y formación" },
     description: {
-      pt: "Em vez de um carrossel improvisado, a seção foi redesenhada como vitrine navegável com leitura confortável em desktop e mobile.",
-      en: "Instead of an improvised carousel, the section was redesigned as a browsable showcase with comfortable reading on desktop and mobile.",
-      es: "En lugar de un carrusel improvisado, la sección fue rediseñada como una vitrina navegable con lectura cómoda en desktop y mobile.",
+      pt: "Formações e certificações que reforçam a base técnica por trás da atuação em produto, engenharia web e desenvolvimento mobile.",
+      en: "Education and certifications that reinforce the technical foundation behind my work in product, web engineering and mobile development.",
+      es: "Formaciones y certificaciones que refuerzan la base técnica detrás de mi trabajo en producto, ingeniería web y desarrollo mobile.",
     },
   },
   contact: {
@@ -298,9 +298,14 @@ export const siteContent: SiteContent = {
     primaryCta: { pt: "Enviar e-mail", en: "Send email", es: "Enviar email" },
     secondaryCta: { pt: "Abrir LinkedIn", en: "Open LinkedIn", es: "Abrir LinkedIn" },
     footerNote: {
-      pt: "Portfólio redesenhado em Next.js, TypeScript e Tailwind para uma base realmente reutilizável.",
-      en: "Portfolio redesigned with Next.js, TypeScript and Tailwind for a truly reusable foundation.",
-      es: "Portafolio rediseñado con Next.js, TypeScript y Tailwind para una base realmente reutilizable.",
+      pt: "Portfólio pessoal V2 construído com Next.js, TypeScript e Tailwind.",
+      en: "Personal portfolio V2 built with Next.js, TypeScript and Tailwind.",
+      es: "Portafolio personal V2 construido con Next.js, TypeScript y Tailwind.",
+    },
+    footerLinkLabel: {
+      pt: "Quer ver a evolução ao longo dos anos? Acesse a primeira versão em HTML, CSS e JavaScript.",
+      en: "Want to see the evolution over the years? Visit the first version built with HTML, CSS and JavaScript.",
+      es: "¿Quieres ver la evolución a lo largo de los años? Mira la primera versión construida con HTML, CSS y JavaScript.",
     },
   },
 };

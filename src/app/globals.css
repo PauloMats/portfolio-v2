@@ -3,29 +3,31 @@
 @tailwind utilities;
 
 :root {
-  --color-bg: 245 238 230;
-  --color-surface: 255 249 241;
-  --color-surface-alt: 233 225 214;
-  --color-fg: 21 30 46;
-  --color-muted: 97 108 127;
-  --color-accent: 206 105 47;
-  --color-accent-soft: 232 190 165;
-  --color-border: 194 178 160;
-  --color-success: 56 130 114;
-  --color-grid: 99 110 128;
+  --color-bg: 242 247 255;
+  --color-surface: 255 255 255;
+  --color-surface-alt: 226 236 255;
+  --color-fg: 15 23 42;
+  --color-muted: 88 102 131;
+  --color-accent: 37 99 235;
+  --color-accent-soft: 214 228 255;
+  --color-border: 188 206 241;
+  --color-success: 16 185 129;
+  --color-grid: 120 144 197;
+  --color-secondary: 168 85 247;
 }
 
 .dark {
-  --color-bg: 9 18 28;
-  --color-surface: 18 30 44;
-  --color-surface-alt: 28 43 61;
-  --color-fg: 245 239 230;
-  --color-muted: 167 178 198;
-  --color-accent: 247 141 78;
-  --color-accent-soft: 93 63 41;
-  --color-border: 67 83 104;
-  --color-success: 87 198 191;
-  --color-grid: 144 164 190;
+  --color-bg: 7 12 28;
+  --color-surface: 13 23 45;
+  --color-surface-alt: 21 35 66;
+  --color-fg: 236 244 255;
+  --color-muted: 160 177 207;
+  --color-accent: 96 165 250;
+  --color-accent-soft: 28 52 102;
+  --color-border: 54 78 128;
+  --color-success: 52 211 153;
+  --color-grid: 120 146 209;
+  --color-secondary: 217 70 239;
 }
 
 html {
@@ -37,6 +39,7 @@ body {
   background:
     radial-gradient(circle at top left, rgba(var(--color-accent), 0.14), transparent 32%),
     radial-gradient(circle at top right, rgba(var(--color-success), 0.12), transparent 28%),
+    radial-gradient(circle at 72% 22%, rgba(var(--color-secondary), 0.1), transparent 24%),
     linear-gradient(180deg, rgba(var(--color-bg), 1) 0%, rgba(var(--color-surface), 1) 100%);
   color: rgb(var(--color-fg));
 }
@@ -83,8 +86,9 @@ body::before {
 
   .spotlight {
     background:
-      radial-gradient(circle at 18% 16%, rgba(var(--color-accent), 0.18), transparent 22%),
-      radial-gradient(circle at 84% 12%, rgba(var(--color-success), 0.16), transparent 18%);
+      radial-gradient(circle at 18% 16%, rgba(var(--color-accent), 0.24), transparent 22%),
+      radial-gradient(circle at 84% 12%, rgba(var(--color-success), 0.16), transparent 18%),
+      radial-gradient(circle at 68% 28%, rgba(var(--color-secondary), 0.16), transparent 20%);
   }
 
   .marquee-track {
@@ -93,6 +97,16 @@ body::before {
 
   .marquee-track:hover {
     animation-play-state: paused;
+  }
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
   }
 }
 
