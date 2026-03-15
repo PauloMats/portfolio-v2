@@ -123,29 +123,33 @@ export function SiteShell() {
                     className="h-full w-full scale-[0.96] object-cover object-top"
                   />
                 </div>
-
-                <div className="grid gap-4 rounded-[1.8rem] bg-background/75 p-5 md:grid-cols-[1.1fr_0.9fr]">
-                  <div className="space-y-4">
-                    <div className="flex h-11 w-11 items-center justify-center rounded-2xl border border-border/60 bg-surface text-accent">
+                <div className="rounded-[1.8rem] bg-background/75 p-5">
+                  
+                  <div className="flex items-center gap-4 mb-6">
+                    <div className="flex h-11 w-11 flex-shrink-0 items-center justify-center rounded-2xl border border-border/60 bg-surface text-accent">
                       <Sparkles className="h-5 w-5" />
                     </div>
-                    <div className="space-y-3">
-                      <span className="eyebrow">{content.hero.profileCardTitle[locale]}</span>
-                      <p className="text-sm leading-7 text-muted">
-                        {content.hero.profileCardDescription[locale]}
-                      </p>
+                    
+                    <div className="flex-1 eyebrow !mt-0 px-4 py-2 rounded-xl border border-border/60 bg-surface/50">
+                      {content.hero.profileCardTitle[locale]}
                     </div>
                   </div>
 
-                  <div className="space-y-2">
-                    {content.hero.badges.map((badge) => (
-                      <div
-                        key={badge[locale]}
-                        className="rounded-2xl border border-border/60 bg-surface/80 px-3 py-3 text-sm text-foreground"
-                      >
-                        {badge[locale]}
-                      </div>
-                    ))}
+                  <div className="grid gap-6 md:grid-cols-[1.1fr_0.9fr] items-start">
+                    <p className="text-sm leading-7 text-muted">
+                      {content.hero.profileCardDescription[locale]}
+                    </p>
+
+                    <div className="space-y-2">
+                      {content.hero.badges.map((badge) => (
+                        <div
+                          key={badge[locale]}
+                          className="rounded-2xl border border-border/60 bg-surface/80 px-3 py-3 text-sm text-foreground"
+                        >
+                          {badge[locale]}
+                        </div>
+                      ))}
+                    </div>
                   </div>
                 </div>
               </div>
